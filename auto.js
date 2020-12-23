@@ -1,8 +1,6 @@
 // Note: The javascript file is loaded after DOMContentLoaded, so you can assume the DOM is complete & available.
 
 (function() {
-    const remote = require('electron').remote;
-
     // Add custom navbar
     let topline = document.getElementById('topline')
     if (topline) {
