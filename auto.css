@@ -56,3 +56,30 @@
 .taskbar__close::before {
     content: 'X';
 }
+
+.button-safebox {
+    position: relative;
+}
+
+.button-safebox::before {
+    content: '';
+    display: inline-block;
+
+    position: absolute;
+    top: 5px;
+    left: 5px;
+
+    width: 34px;
+    height: 34px;
+    
+    background-image: url(/skins/countermail/images/countermail/safe_black.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    filter: invert(1);
+}
+
+.button-safebox:hover::before {
+    background-image: url(/skins/countermail/images/countermail/safe_green.svg);
+    filter: invert(0);
+}

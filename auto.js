@@ -30,6 +30,28 @@
         document.body.appendChild(taskbar);
     }
 
+    // Add Shortcut to Password Manager
+    let menu = document.getElementById("taskbar");
+    if (menu) {
+        let safebox__shortcut = document.createElement("a");
+        safebox__shortcut.classList.add("button-safebox");
+        safebox__shortcut.role = "button";
+        safebox__shortcut.href = "./?_task=settings&_action=plugin.countermail_safebox";
+        safebox__shortcut.tabIndex = -1;
+        safebox__shortcut["aria-disabled"] = true;
+
+        let button__inner = document.createElement("span");
+        button__inner.classList.add("button-inner");
+        button__inner.innerHTML = "Safebox";
+
+        safebox__shortcut.appendChild(button__inner);
+
+        menu.insertBefore(safebox__shortcut, menu.children[1]);
+    }
+
+    // This button sucks
+    document.getElementsByClassName("minmodetoggle")[0].remove();
+
     function taskbar__close() {
         let exit = document.createElement("button");
         exit.classList.add("taskbar__close");
