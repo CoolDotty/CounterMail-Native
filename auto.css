@@ -1,0 +1,58 @@
+#premiumservices {
+    opacity: 0;
+}
+
+#premiumservices:hover, #premiumservices:focus {
+    opacity: 0.75;
+}
+
+#login-form > *:not(:first-child) {
+    display: none;
+}
+
+.taskbar {
+    display: flex;
+    justify-content: space-between;
+    -webkit-app-region: drag;
+
+    background: #000 !important;
+    color: #eee !important;
+    padding: 0 !important;
+}
+
+.taskbar--no-auth {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.taskbar > * {
+    -webkit-app-region: no-drag;
+}
+
+.taskbar__title {
+    margin-left: 1em;
+}
+
+.taskbar__title > *{
+    padding: 0;
+    margin: 0;
+}
+
+.taskbar__close {
+    display: block;
+    border: none;
+
+    background: none;
+    color: #eee;
+
+    cursor: pointer;
+}
+
+.taskbar__close:hover, .taskbar__close:focus {
+    text-decoration: underline;
+}
+
+.taskbar__close::before {
+    content: 'X';
+}
