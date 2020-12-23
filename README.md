@@ -1,4 +1,4 @@
-# Countermail-Native
+# CounterMail-Native
 Just a basic electron app for logging in to [CounterMail](https://countermail.com/) with some quality of life changes too.
 
 ![Preview of login](preview.png)
