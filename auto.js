@@ -53,7 +53,7 @@
     document.getElementsByClassName("minmodetoggle")[0].remove();
 
     function taskbar__close() {
-        let exit = document.createElement("button");
+        let exit = document.createElement("div");
         exit.classList.add("taskbar__close");
         exit.onclick = () => {
             window.close();

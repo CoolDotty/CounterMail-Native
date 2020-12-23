@@ -40,17 +40,20 @@
 }
 
 .taskbar__close {
-    display: block;
-    border: none;
-
-    background: none;
+    width: 1.5em;
+    height: 1.5em;
     color: #eee;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     cursor: pointer;
 }
 
 .taskbar__close:hover, .taskbar__close:focus {
     text-decoration: underline;
+    background-color: #ff556e;
 }
 
 .taskbar__close::before {
