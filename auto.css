@@ -6,7 +6,7 @@
     opacity: 0.75;
 }
 
-#login-form > *:not(:first-child) {
+#login-form > *:nth-child(n + 3) {
     display: none;
 }
 
