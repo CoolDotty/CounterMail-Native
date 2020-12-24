@@ -4,7 +4,7 @@
     // Add custom navbar
     let topline = document.getElementById('topline')
     if (topline) {
-        // Authenticated
+        // Inbox
         topline.classList.add("taskbar");
 
         topline.getElementsByClassName("topleft")[0].remove();
@@ -14,8 +14,11 @@
         taskbar__title.classList.add('taskbar__title');
 
         topline.appendChild(taskbar__close());
+
+        // This button sucks
+        document.getElementsByClassName("minmodetoggle")[0].remove();
     } else {
-        // Login Page
+        // Some other page
         let taskbar = document.createElement("div");
         taskbar.classList.add("taskbar");
         taskbar.classList.add("taskbar--no-auth");
@@ -48,9 +51,6 @@
 
         menu.insertBefore(safebox__shortcut, menu.children[1]);
     }
-
-    // This button sucks
-    document.getElementsByClassName("minmodetoggle")[0].remove();
 
     function taskbar__close() {
         let exit = document.createElement("div");
