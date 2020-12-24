@@ -1,9 +1,10 @@
 #premiumservices {
-    opacity: 0;
+    /* opacity: 0; */
+    display: none !important;
 }
 
 #premiumservices:hover, #premiumservices:focus {
-    opacity: 0.75;
+    /* opacity: 0.75; */
 }
 
 #login-form > *:nth-child(n + 3) {
