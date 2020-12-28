@@ -74,12 +74,12 @@
         let exit = document.createElement("div");
         exit.classList.add("taskbar__close");
         exit.onclick = () => {
-            window.close();
             // Default back to inbox on close
             let back_to_home = document.getElementsByClassName('button-mail');
             if (back_to_home.length > 0) {
                 back_to_home[0].click();
             }
+            window.close();
         }
         return exit;
     }
